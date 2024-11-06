@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html id="topp" lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio x Rahul</title>
+  <link rel="stylesheet" href="main.css" />
+  <link rel="stylesheet" href="https://use.typekit.net/yba3uco.css" />
+  <script src=" https://cdn.tailwindcss.com"></script>
+  <style>
+    :root {
+      --primaryBlue: rgb(76, 110, 226);
+      --green: #d3f86e;
+      --pink: #fa77eb;
+      --dGray: #292830;
+      --lGray: #eef0fe;
+      --blue: #858ffb;
+      --lPurple: #848ef8;
+    }
+
+    * {
+      scroll-behavior: smooth;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: degular, sans-serif;
+    }
+
+    #hamBur-card {
+
+      transform: translateX(300px);
+    }
+
+    .prjImg {
+      transition: .5s ease-in-out;
+    }
+
+    .projects:hover .prjImg {
+
+      cursor: pointer;
+      transform: scale(1.1);
+    }
+
+    .projects:hover .arrInCircle {
+      rotate: 360deg;
+      opacity: 1;
+    }
+
+
+    .btn1 {
+      box-shadow: 0 6px var(--dGray);
+      transition: 0.3s ease-in-out;
+    }
+
+    .btn1:hover {
+      box-shadow: none;
+      transform: translatey(5px);
+    }
+
+    .hamB1,
+    .hamB3,
+    .dArrow {
+      transition: 0.3s ease-in-out;
+    }
+
+
+
+    .dArrow:hover {
+      transform: translateY(12px);
+    }
+
+    .hamB:hover .hamB1 {
+      transform: translateX(10px);
+    }
+
+    .hamB:hover .hamB3 {
+      transform: translateX(-10px);
+    }
+
+    .smiley {
+      transition: 0.3s ease-in-out;
+    }
+
+    .btn1:hover .smiley {
+      transform: rotate(360deg);
+    }
+
+    .italicc {
+      font-family: "ivypresto-display", sans-serif;
+    }
+
+    .arrInCircle {
+      opacity: .6;
+      transition: 0.3s ease-in-out;
+    }
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+</head>
+
+<body class="">
+  <div id="main" class="relative main w-full text-white overflow-hidden">
+
+
+
+    <!-- Section 1 -->
+
+    <div class="sec1 bg-[--primaryBlue]  sm:p-6 py-2 px-4 md:h-[70vh] h-[100vh] lg:h-[100vh] relative w-full">
+
+      <!-- bg elements -->
+      <div class="bgElem w-full h-full absolute">
+
+        <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 84.75 42.38"
+          class=" absolute sm:top-[40%] top-[18%] sm:-left-20 -left-6 sm:w-48 w-28 flex justify-center items-center fill-[--green] -rotate-[30deg] ">
+          <path class="cls-1" d="M0,0h84.75c0,23.4-18.97,42.38-42.38,42.38S0,23.4,0,0Z" />
+        </svg>
+
+        <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 99.75 99.75 "
+          class="absolute -left-5 sm:left-20 sm:top-[60%] top-[68%] sm:w-9 w-12 flex justify-center items-center fill-[--pink]  ">
+          <path class="cls-1"
+            d="M49.88,55.58c0,102.62-108.32-5.7-5.7-5.7-102.62,0,5.7-108.32,5.7-5.7,0-102.62,108.32,5.7,5.7,5.7,102.62,0-5.7,108.32-5.7,5.7Z" />
+        </svg>
+
+        <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 114.02 114.02" class="hidden  sm:flex absolute sm:left-32
+            sm:top-[70%]
+            sm:w-6 justify-center items-center fill-[--dGray] ">
+          <rect class="cls-1" x="16.7" y="16.7" width="80.62" height="80.62"
+            transform="translate(57.01 -23.61) rotate(45)" />
+        </svg>
+
+
+        <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 99.75 99.75 "
+          class="absolute  right-[15%] sm:right-[26%] sm:w-16 sm:top-[14%]  top-[20%] w-12 flex justify-center items-center fill-[#7796ff]  ">
+          <path class="cls-1"
+            d="M49.88,55.58c0,102.62-108.32-5.7-5.7-5.7-102.62,0,5.7-108.32,5.7-5.7,0-102.62,108.32,5.7,5.7,5.7,102.62,0-5.7,108.32-5.7,5.7Z" />
+        </svg>
+
+        <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 114.02 114.02" class="hidden sm:flex absolute sm:right-32
+            sm:top-[30%]
+            sm:w-6 justify-center items-center fill-[--green] ">
+          <rect class="cls-1" x="16.7" y="16.7" width="80.62" height="80.62"
+            transform="translate(57.01 -23.61) rotate(45)" />
+        </svg>
+
+
+
+        <div
+          class="w-32  sm:w-40 h-32 sm:h-40 bg-[--dGray] absolute -right-24 bottom-[20%] sm:bottom-[30%] rounded-full sm:-right-20">
+        </div>
+
+      </div>
+
+      <!-- Nav Starts Here -->
+      <nav
+        class="flex justify-between mx-0 sm:px-10 mt-0 sm:relative sm:py-0 py-1 absolute w-full left-0 top-0 items-center sm:border-none border-b pb-4 border-b-white  border-opacity-25 z-50">
+        <span class="flex gap-4 ml-4 ">
+          <a href="#main" class="font-bold sm:text-5xl text-4xl">Rahul</a>
+          <ul class="hidden text-lg md:flex items-center gap-8 ml-12">
+            <a href="#sec2" class="hover:underline">
+              <li>Portfolio</li>
+            </a>
+            <a href="#servicesSec" class="hover:underline">
+              <li>Services</li>
+            </a>
+            <a href="#aboutSec" class="hover:underline cursor-pointer">
+              <li>About</li>
+            </a>
+          </ul>
+        </span>
+
+        <span class="flex gap-2 h-full  relative sm:top-0 top-1  mr-4 items-center ">
+
+          <button
+            class=" btn1 border border-[--dGray] bg-[--green] text-[--dGray] flex justify-center items-center gap-2 py-2 sm:h-full h-8  rounded-full px-3 sm:px-4 shdw sm:text-md text-md">
+            <a href="mailto:contact.rawhul@gmail.com">
+              Contact me
+            </a>
+
+            <svg class="smiley" data-bbox="0 0 25 25" viewBox="0 0 25 25" height="16" width="16"
+              xmlns="http://www.w3.org/2000/svg" data-type="ugc">
+              <g>
+                <path stroke-width="1.5" stroke-linecap="round" stroke="#282830" fill="none"
+                  d="m7.781 6.137 2.752 3.277-3.9 2.749"></path>
+                <path fill="#282830" d="M17 9c0 2.21-.672 4-1.5 4S14 11.21 14 9s.672-4 1.5-4S17 6.79 17 9"></path>
+                <path stroke-width="1.5" stroke-linecap="round" stroke="#282830" fill="none"
+                  d="M5.6 15.322s1.626 5.926 7.6 5.242 5.558-7.118 5.558-7.118"></path>
+                <g>
+                  <path d="M12.5 0A12.5 12.5 0 1 1 0 12.5 12.5 12.5 0 0 1 12.5 0" fill="none"></path>
+                  <path fill="#282830"
+                    d="M12.5 1.5c-2.938 0-5.7 1.144-7.778 3.222A10.93 10.93 0 0 0 1.5 12.5c0 2.938 1.144 5.7 3.222 7.778A10.93 10.93 0 0 0 12.5 23.5c2.938 0 5.7-1.144 7.778-3.222A10.93 10.93 0 0 0 23.5 12.5c0-2.938-1.144-5.7-3.222-7.778A10.93 10.93 0 0 0 12.5 1.5m0-1.5C19.404 0 25 5.596 25 12.5S19.404 25 12.5 25 0 19.404 0 12.5 5.596 0 12.5 0">
+                  </path>
+                </g>
+              </g>
+            </svg>
+          </button>
+          <!-- hamBur -->
+          <div id="hamBur-ico"
+            class="relative sm:fixed sm:hidden justify-center cursor-pointer  flex flex-col gap-[6px] w-11  p-3   sm:bg-[--primaryBlue] rounded-xl z-40  sm:right-6 sm:top-6  border-white ">
+            <div class=" relative mr-auto rounded-full w-2/3 bg-white h-[2px]"></div>
+
+            <div class="relative rounded-full w-full bg-white h-[2px]"></div>
+
+            <div class=" ml-auto rounded-full w-2/3 bg-white h-[2px] relative"></div>
+          </div>
+
+        </span>
+      </nav>
+
+
+      <div id="hamBur-card" class="z-50 card bg-[--dGray] w-[18rem] fixed top-2 right-2 px-8 py-10 rounded-2xl">
+
+
+        <div id="close" onclick="closeCard()" class=" text-4xl absolute top-3 right-5 cursor-pointer  text-[--green]"><i
+            class="fa-solid fa-xmark"></i></div>
+
+        <div class="relative  italic text-4xl flex flex-col mt-12 gap-2">
+          <a onclick="closeCard()" href="#sec2">
+            <h2 class=" italicc cursor-pointer hover:text-[--green]">Portfolio</h2>
+          </a>
+          <a onclick="closeCard()" href="#servicesSec">
+            <h2 class="italicc cursor-pointer hover:text-[--green]">Services</h2>
+          </a>
+
+          <a onclick="closeCard()" href="#aboutSec">
+            <h2 class="italicc cursor-pointer hover:text-[--green]">About</h2>
+          </a>
+        </div>
+
+        <div class="relative mt-10">
+          <a href="https://www.instagram.com/rawhul.psd/" target="_blank">
+            <h6 class="cursor-pointer ">instagram</h6>
+          </a>
+          <a href="https://www.behance.net/iamrawhul" target="_blank">
+            <h6 class="cursor-pointer ">Behance</h6>
+          </a>
+          <a href="https://www.linkedin.com/in/iamrawhul/" target="_blank">
+            <h6 class="cursor-pointer ">Linkedin</h6>
+          </a>
+
+        </div>
+
+      </div>
+      <!-- nav ends here -->
+
+      <!-- hero starts here -->
+
+      <div
+        class="hero w-full flex justify-center items-center h-full flex-col md:gap-0 lg:gap-8 gap-8 sm:mt-0 mt-16 text-center sm:pb-0   pb-16">
+
+        <!-- hello -->
+        <h1
+          class="relative sm:text-[25vw] text-[32vw] sm:h-[16vw] h-[28vw] font-bold w-full flex justify-center items-center sm:mt-4 select-none cursor-auto">
+          <div class="hello absolute flex">
+            <span>H</span>
+            <span>e</span>
+            <span>l</span>
+            <span>l</span>
+            <span>o</span>
+          </div>
+          <div class="namastey flex sm:text-[20vw]  text-[28vw]">
+            <span>न</span>
+            <span>म</span>
+            <span>स्ते</span>
+          </div>
+        </h1>
+
+        <!-- name -->
+        <div class="mb-2 sm:mt-24 md:mt-12 flex flex-col justify-center items-center sm:text-3xl text-2xl">
+          <h2 class=" font-bold">I'm Rahul Sharma</h2>
+          <h3 class=" sm:text-nowrap text-wrap sm:w-full w-2/3 italicc italic">
+            Graphic Designer
+            & Illustrator.
+          </h3>
+        </div>
+
+        <!-- arrow -->
+        <a href="#sec2 ">
+          <svg preserveAspectRatio="xMidYMid meet" data-bbox="0.267 0 33.452 63.349" viewBox="0 0 33.985 63.349"
+            class="w-9 sm:mt-4 mt-0 relative dArrow cursor-pointer" xmlns="http://www.w3.org/2000/svg" data-type="ugc"
+            role="presentation" aria-hidden="true" aria-label="">
+            <g>
+              <path stroke-width="2" stroke="#d0f56e" fill="none" d="M16.993 0v63.349"></path>
+              <path stroke-width="2" stroke="#d0f56e" fill="none" d="M.267 43.172s16.726 4.625 16.726 20.13"></path>
+              <path stroke-width="2" stroke="#d0f56e" fill="none" d="M33.719 43.172s-16.726 4.625-16.726 20.13"></path>
+            </g>
+          </svg>
+        </a>
+      </div>
+
+
+
+
+    </div>
+
+    <!-- Section 2 / Portfolio -->
+    <div id="sec2"
+      class="sec2 w-full px-6 lg:px-12 h-full text-[--dGray] bg-[--lGray] flex items-center flex-col text-center">
+      <div class="sec2-title flex justify-center items-center flex-col mt-28  mb-12">
+        <div id="portfolio" class="title portfolio-title text-7xl  sm:flex sm:gap-4">
+          <h2 class="font-semibold">Selected</h2>
+          <span class="italicc italic -mt-1">works</span>
+        </div>
+
+        <p class="portfolio-subtitle font-bold text-[1.2rem] mt-6">
+          Take a look at some of my projects &nbsp;✦
+        </p>
+
+        <p class="portfolio-subtitle text-lg sm:w-96">
+          Each peace showcases my creative journey and dedication to
+          transforming ideas into visually compelling stories.
+        </p>
+      </div>
+
+
+      <div class=" portfolio-media  row1 sm:flex justify-between w-full ">
+
+        <!-- Card 1 -->
+        <div id="card1"
+          class="text-white relative overflow-hidden projects-card1 flex justify-center items-center h-[460px] sm:h-[600px]  w-full sm:w-[160%] text-nowrap rounded-3xl mb-8 projects sm:mx-4">
+          <img class="object-cover h-full w-full prjImg "
+            src="https://as1.ftcdn.net/v2/jpg/04/58/02/06/1000_F_458020674_l7tGC8XbZeXH1yeEZpFHQATGecpyRc3z.jpg"
+            alt="" />
+
+          <div class="absolute top-0 h-full w-full bg-gradient-to-t from-black opacity-75 cursor-pointer"></div>
+
+          <div class="absolute bottom-0 p-8 flex w-full justify-between items-end">
+            <div class="flex flex-col items-start">
+              <div class="text-5xl mb-4 flex flex-wrap justify-start">
+                <h4 class="font-bold">Opere d'</h4>
+                <span class="italicc italic">olio</span>
+              </div>
+
+              <div class="cursor-pointer p-2 px-4 text-sm bg-[--pink] rounded-full relative">
+                Package Design
+              </div>
+            </div>
+            <button class="arrInCircle">
+              <svg class="w-16 -rotate-45" preserveAspectRatio="xMidYMid meet" data-bbox="22.5 22.5 155 155"
+                viewBox="22.5 22.5 155 155" xmlns="http://www.w3.org/2000/svg" fill="white" data-type="shape"
+                role="presentation" aria-hidden="true" aria-label="">
+                <g>
+                  <path
+                    d="M129.8 100l-25.1 25.1-3.1-3.1 19.7-19.7h-48v-4.4h48l-19.7-19.7 3.1-3.1 25.1 24.9zm47.7 0c0-42.8-34.7-77.5-77.5-77.5S22.5 57.2 22.5 100s34.7 77.5 77.5 77.5 77.5-34.7 77.5-77.5zm-4.4 0c0 40.4-32.7 73.1-73.1 73.1S26.9 140.4 26.9 100c0-40.4 32.7-73.1 73.1-73.1 40.3.1 73 32.8 73.1 73.1z">
+                  </path>
+                </g>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div id="card2"
+          class="text-white relative overflow-hidden projects-card1 flex justify-center items-center h-[520px] text-nowrap rounded-3xl w-full mb-8 projects sm:mx-4 ">
+          <img class="object-cover h-full w-full prjImg "
+            src="https://as1.ftcdn.net/v2/jpg/04/58/02/06/1000_F_458020674_l7tGC8XbZeXH1yeEZpFHQATGecpyRc3z.jpg"
+            alt="" />
+
+          <div class="absolute top-0 h-full w-full bg-gradient-to-t from-black opacity-75 cursor-pointer "></div>
+
+          <div class="absolute bottom-0 p-8 flex w-full justify-between items-end">
+            <div class="flex flex-col items-start">
+              <div class="text-5xl mb-4 flex flex-wrap justify-start">
+                <h4 class="font-bold">Opere d'</h4>
+                <span class="italicc italic">olio</span>
+              </div>
+
+              <div class="cursor-pointer p-2 px-4 text-sm bg-[--primaryBlue] rounded-full relative">
+                Package Design
+              </div>
+            </div>
+            <button class="arrInCircle">
+              <svg class="w-16 -rotate-45" preserveAspectRatio="xMidYMid meet" data-bbox="22.5 22.5 155 155"
+                viewBox="22.5 22.5 155 155" xmlns="http://www.w3.org/2000/svg" fill="white" data-type="shape"
+                role="presentation" aria-hidden="true" aria-label="">
+                <g>
+                  <path
+                    d="M129.8 100l-25.1 25.1-3.1-3.1 19.7-19.7h-48v-4.4h48l-19.7-19.7 3.1-3.1 25.1 24.9zm47.7 0c0-42.8-34.7-77.5-77.5-77.5S22.5 57.2 22.5 100s34.7 77.5 77.5 77.5 77.5-34.7 77.5-77.5zm-4.4 0c0 40.4-32.7 73.1-73.1 73.1S26.9 140.4 26.9 100c0-40.4 32.7-73.1 73.1-73.1 40.3.1 73 32.8 73.1 73.1z">
+                  </path>
+                </g>
+              </svg>
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <div class="portfolio-media sm:relative sm:-top-16 row1 sm:flex justify-between w-full sm:mb-36">
+      </div>
+
+    </div>
+
+    <!-- Services -->
+    <div id="servicesSec"
+      class="services w-full bg-[--dGray] h-auto py-20 text-white flex items-center justify-center flex-col">
+      <h3 class=" text-3xl font-bold mb-12 uppercase">Services</h3>
+
+      <ul class=" italicc font-light text-5xl flex flex-col gap-8 italic">
+        <li class="italicc flex gap-4 justify-center items-center text-nowrap">
+          Brand Idendity
+          <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 99.75 99.75 "
+            class="w-10 flex justify-center items-center fill-[--blue] rotate-12">
+            <path class="cls-1"
+              d="M49.88,55.58c0,102.62-108.32-5.7-5.7-5.7-102.62,0,5.7-108.32,5.7-5.7,0-102.62,108.32,5.7,5.7,5.7,102.62,0-5.7,108.32-5.7,5.7Z" />
+          </svg>
+        </li>
+
+        <li class="italicc flex gap-2 flex-row-reverse">
+          Brand Idendity
+          <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 84.75 42.38"
+            class="w-12 flex justify-center items-center fill-[--green] -rotate-[16deg]">
+            <path class="cls-1" d="M0,0h84.75c0,23.4-18.97,42.38-42.38,42.38S0,23.4,0,0Z" />
+          </svg>
+        </li>
+
+        <li class="italicc flex gap-2">
+          Brand Idendity
+
+          <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 142.52 142.52"
+            class="w-12 flex justify-center items-center fill-[--pink]">
+            <path class="cls-1"
+              d="M71.26,142.52c0-28.5-42.76-71.26-71.26-71.26C28.5,71.26,71.26,28.5,71.26,0c0,28.5,42.76,71.26,71.26,71.26-28.5,0-71.26,42.76-71.26,71.26Z" />
+          </svg>
+        </li>
+
+        <li class="italicc flex gap-4 flex-row-reverse">
+          Brand Idendity
+          <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 114.02 114.02"
+            class="w-7 flex justify-center items-center fill-[--lPurple]">
+            <rect class="cls-1" x="16.7" y="16.7" width="80.62" height="80.62"
+              transform="translate(57.01 -23.61) rotate(45)" />
+          </svg>
+        </li>
+
+        <li class="italicc flex gap-2 justify-center items-center">
+          Brand Idendity
+          <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 133.51 132.24"
+            class="w-10 flex justify-center items-center fill-[--green]">
+            <path class="cls-1"
+              d="M66.76,54.1c0-79.36-48.93-64.99-5.14,1.51-43.79-66.5-77.19-27.96-3.51,4.05-73.68-32.01-80.94,18.47-.76,5.3-80.18,13.17-58.99,59.55,2.22,4.87-61.22,54.68-18.32,82.25,4.5,2.89-22.82,79.36,28.17,79.36,5.35,0,22.82,79.36,65.72,51.79,4.5-2.89,61.22,54.68,82.4,8.3,2.22-4.87,80.18,13.17,72.92-37.31-.76-5.3,73.68-32.01,40.29-70.55-3.51-4.05,43.79-66.5-5.14-80.87-5.14-1.51Z" />
+          </svg>
+        </li>
+      </ul>
+    </div>
+
+    <!-- About -->
+    <div id="aboutSec"
+      class="sec2 w-full px-6 sm:px-12  h-full text-[--dGray] bg-[--lGray] flex items-center flex-col text-center">
+
+      <div class="flex justify-center items-center flex-col mt-28 ">
+        <div class=" title text-7xl  sm:flex sm:gap-4">
+          <h2 class="font-semibold">More</h2>
+          <span class="italicc italic">about me</span>
+        </div>
+
+        <p class="text-lg leading-6 py-6 px-8 sm:w-[28rem]">
+          Each peace showcases my creative journey and dedication to
+          transforming ideas into visually compelling <b>Rahul</b>
+          stories&nbsp;✦
+        </p>
+        <p class="text-lg leading-6 px-8 sm:w-[28rem] ">
+          Each peace showcases my creative journey and dedication to
+          transforming ideas into visually compelling stories&nbsp;✦
+        </p>
+      </div>
+
+
+      <!-- Pic & Exp -->
+      <div class="flex-col sm:flex-row flex mx-auto sm:justify-evenly items-center sm:w-full sm:relative gap-12 my-20">
+        <!-- Pic -->
+        <div class="pic relative min-w-48 w-3/4 sm:w-[20%]">
+          <div class="overflow-hidden rounded-3xl">
+            <img
+              src="https://images.pexels.com/photos/771742/pexels-photo-771742.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+              alt="" class="object-contain" />
+          </div>
+
+          
+        </div>
+
+        <!-- Experiences-mb -->
+        <div class="exp w-full sm:hidden">
+          <div class="flex flex-col items-start border-t border-black w-full py-6">
+            <div class="ml-5 date text-lg">Jul 2017 - Aug 2017</div>
+            <h5 class="ml-5 italicc italic text-3xl">Graphic Designer</h5>
+            <h6 class="ml-5 text-sm text-gray-500">Internship</h6>
+            <div class="ml-5 date text-lg">Graphic Line Studio</div>
+          </div>
+          <div class="flex flex-col items-start border-t border-black w-full py-6">
+            <div class="ml-5 date text-lg">Jul 2017 - Aug 2017</div>
+            <h5 class="ml-5 italicc italic text-3xl">Graphic Designer</h5>
+            <h6 class="ml-5 text-sm text-gray-500">Internship</h6>
+            <div class="ml-5 date text-lg">Graphic Line Studio</div>
+          </div>
+          <div class="bg-[--green] flex flex-col items-start border-y border-black w-full py-6">
+            <div class="ml-5 date text-lg">Jul 2017 - Aug 2017</div>
+            <h5 class="ml-5 italicc italic text-3xl">Graphic Designer</h5>
+            <h6 class="ml-5 text-sm text-gray-500">Internship</h6>
+            <div class="ml-5 date text-lg">Graphic Line Studio</div>
+          </div>
+        </div>
+
+        <!-- Experiences-lg -->
+        <div class="exp w-[70%] hidden sm:block ">
+          <div class="w-full px-2 text-left flex relative pb-6  text-gray-400 font-semibold">
+            <h6 class="w-1/3">Internship</h6>
+            <h6 class="w-[42%] ">Internship</h6>
+            <h6 class="w-1/4 ">Internship</h6>
+          </div>
+
+          <!-- Data/Row1 -->
+          <div class="w-full  text-left flex relative  py-6 border-t border-black px-4">
+            <div class="w-1/3 pr-8  text-lg font-semibold">Jul 2017 - Aug 2017</div>
+            <div class="w-[42%] pr-8 flex flex-col items-start gap-2">
+              <h5 class="italicc italic text-3xl font-thin">Graphic Designer</h5>
+              <h6 class="text-sm text-gray-400">Internship</h6>
+            </div>
+            <div class="w-1/4 pr-8 text-lg font-semibold">Graphic Line Studio</div>
+
+          </div>
+
+          <!-- Data/Row2 -->
+          <div class="w-full px-4 text-left flex relative  py-6 border-t border-black">
+            <div class="w-1/3 pr-8   text-lg font-semibold">Jul 2017 - Aug 2017</div>
+            <div class="w-[42%] pr-8 flex flex-col items-start gap-2">
+              <h5 class="w-[80%] italicc italic text-3xl font-thin">Graphic Designer & Illustrator</h5>
+              <h6 class="text-sm text-gray-400">Internship</h6>
+            </div>
+            <div class="w-1/4 pr-8  text-lg font-semibold">Graphic Line Studio</div>
+
+          </div>
+
+          <!-- Data/Row3 -->
+          <div class="w-full px-4 bg-[--green] text-left flex relative  py-6 border-y border-black">
+            <div class="w-1/3 pr-8   text-lg font-semibold">Jul 2017 - Aug 2017</div>
+            <div class="w-[42%] pr-8 flex flex-col items-start gap-2">
+              <h5 class="italicc italic text-3xl font-thin">Graphic Designer </h5>
+
+            </div>
+            <div class="w-1/4 pr-8  text-lg font-semibold">Graphic Line Studio</div>
+
+          </div>
+
+
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="w-full  bg-[--primaryBlue] text-white relative">
+    <!-- CTA scroller/start -->
+    <div
+      class="letsWorkTog  relative border-b border-white flex w-full text-7xl sm:text-[150px] text-nowrap overflow-hidden px-6 sm:px-16 sm:gap-12 gap-4 py-8 sm:py-28 ">
+      <div class="scroller flex sm:gap-12 gap-4  ">
+        <h6 class=" font-bold">Let's work</h6>
+        <span class=" font-thin italicc italic">together</span>
+        <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 142.52 142.52"
+          class="min-w-20 w-20 relative top-4 fill-[--green]">
+          <path class="cls-1"
+            d="M71.26,142.52c0-28.5-42.76-71.26-71.26-71.26C28.5,71.26,71.26,28.5,71.26,0c0,28.5,42.76,71.26,71.26,71.26-28.5,0-71.26,42.76-71.26,71.26Z" />
+        </svg>
+
+      </div>
+
+    </div>
+
+
+    <!-- middle -->
+    <div class="p-6 sm:px-16 mt-6 sm:flex sm:justify-between sm:items-start sm:mb-16 sm:w-[85%] sm:py-24  ">
+      <!-- m1 -->
+      <div class="sm:w-1/3  ">
+        <a href="#main" class="font-bold  inline-block  text-4xl mb-4 ">Rahul</a>
+        <p class="text-2xl">
+          The power of <span class="italic italicc">design.</span>
+        </p>
+        <p class="text-2xl">
+          The power of <span class="italic italicc">design.</span>
+        </p>
+      </div>
+
+      <!-- m2 -->
+      <div class=" sm:w-1/3 lg:relative xl:-left-20 sm:px-4 ">
+        <div class=" sm:mt-0 mt-12 mb-4 w-full text-[--green] text-sm font-bold ">
+          Drop me a line
+        </div>
+        <a href="mailto:contact.rawhul@gmail.com"
+          class="font-bold md:text-xl text-3xl  underline wrap break-words">contact.rawhul@gmail.com</a>
+      </div>
+
+      <!-- m3 -->
+      <div class=" sm:w-1/3   flex sm:items-start sm:justify-between sm:my-0 my-10 gap-24 ">
+        <div class=" ">
+          <h6 class="text-sm font-bold text-[--green] mb-8">Link</h6>
+          <ul class="flex flex-col text-lg cursor-pointer">
+            <a href="#sec2">
+              <li>Portfolio</li>
+            </a>
+            <a href="#servicesSec">
+              <li>Services</li>
+            </a>
+            <a href="#aboutSec">
+              <li>About</li>
+            </a>
+
+
+          </ul>
+        </div>
+        <div class="">
+          <h6 class="text-sm font-bold text-[--green] mb-8">
+            Social Media
+          </h6>
+          <ul class="flex flex-col text-lg cursor-pointer">
+            <a target="_blank" href="https://www.instagram.com/rawhul.psd/">
+              <li>Instagram</li>
+            </a>
+            <a target="_blank" href="https://www.behance.net/iamrawhul">
+              <li>Behance</li>
+            </a>
+            <a target="_blank" href="https://www.linkedin.com/in/iamrawhul/">
+              <li>Linkedin</li>
+            </a>
+
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- end -->
+    <div class="text-sm p-6 sm:py-10 py-4 sm:px-16 leading-6 bg-[--dGray] sm:gap-2   bottom-0  w-full sm:flex">
+      @2024 by Rahul Sharma &nbsp;✦
+      <div class="cursor-pointer">Privacy Policy | Cookie Policy</div>
+    </div>
+  </footer>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+    integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+    integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
