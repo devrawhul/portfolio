@@ -72,6 +72,58 @@ gsap.to(
   "-=0.75"
 );
 
+// Scroll to down when clicked on arrow
+document.querySelector(".dArrow").addEventListener("click", () => {
+  gsap.to(window, {
+    duration: 1,
+    scrollTo: "#sec2",
+    ease: "power3.inOut",
+  });
+});
+
+document.querySelector(".portfolioBtn").addEventListener("click", () => {
+  gsap.to(window, {
+    duration: 1,
+    scrollTo: "#sec2",
+    ease: "power3.inOut",
+  });
+});
+document.querySelector(".portfolioBtn2").addEventListener("click", () => {
+  gsap.to(window, {
+    duration: 1,
+    scrollTo: "#sec2",
+    ease: "power3.inOut",
+  });
+});
+document.querySelector(".servicesBtn").addEventListener("click", () => {
+  gsap.to(window, {
+    duration: 2,
+    scrollTo: "#servicesSec",
+    ease: "power3.inOut",
+  });
+});
+document.querySelector(".servicesBtn2").addEventListener("click", () => {
+  gsap.to(window, {
+    duration: 2,
+    scrollTo: "#servicesSec",
+    ease: "power3.inOut",
+  });
+});
+document.querySelector(".aboutBtn").addEventListener("click", () => {
+  gsap.to(window, {
+    duration: 2,
+    scrollTo: "#aboutSec",
+    ease: "power3.inOut",
+  });
+});
+document.querySelector(".aboutBtn2").addEventListener("click", () => {
+  gsap.to(window, {
+    duration: 2,
+    scrollTo: "#aboutSec",
+    ease: "power3.inOut",
+  });
+});
+
 gsap.to("#servicesSec  ul li:nth-child(even)", {
   x: -50,
   duration: 3,
@@ -156,7 +208,8 @@ gsap.to(".scroller", {
 document.querySelector(".bgElem").addEventListener("mousemove", (e) => {
   gsap.to(".bgElem", {
     duration: 0.5,
-    x: e.clientX / 100,
-    y: e.clientY / 100,
+    x: e.clientX / 25,
+    y: e.clientY / 25,
+    ease: "none",
   });
 });
