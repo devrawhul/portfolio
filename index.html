@@ -9,6 +9,11 @@
   <link rel="stylesheet" href="https://use.typekit.net/yba3uco.css" />
   <script src=" https://cdn.tailwindcss.com"></script>
   <style>
+
+    ::selection{
+      background-color: var(--green);
+    }
+
     :root {
       --primaryBlue: rgb(76, 110, 226);
       --green: #d3f86e;
@@ -20,7 +25,7 @@
     }
 
     * {
-      scroll-behavior: smooth;
+
       margin: 0;
       padding: 0;
       box-sizing: border-box;
@@ -105,7 +110,7 @@
 
     <!-- Section 1 -->
 
-    <div class="sec1 bg-[--primaryBlue]  sm:p-6 py-2 px-4 md:h-[70vh] h-[100vh] lg:h-[100vh] relative w-full">
+    <div class="sec1 bg-[--primaryBlue]  sm:p-6 py-2 px-4 md:h-[80vh] h-[100vh] lg:h-[100vh] relative w-full">
 
       <!-- bg elements -->
       <div class="bgElem w-full h-full absolute">
@@ -154,17 +159,17 @@
       <nav
         class="flex justify-between mx-0 sm:px-10 mt-0 sm:relative sm:py-0 py-1 absolute w-full left-0 top-0 items-center sm:border-none border-b pb-4 border-b-white  border-opacity-25 z-50">
         <span class="flex gap-4 ml-4 ">
-          <a href="#main" class="font-bold sm:text-5xl text-4xl">Rahul</a>
+          <a href="" class="font-bold sm:text-5xl text-4xl">Rahul</a>
           <ul class="hidden text-lg md:flex items-center gap-8 ml-12">
-            <a href="#sec2" class="hover:underline">
-              <li>Portfolio</li>
-            </a>
-            <a href="#servicesSec" class="hover:underline">
-              <li>Services</li>
-            </a>
-            <a href="#aboutSec" class="hover:underline cursor-pointer">
-              <li>About</li>
-            </a>
+
+            <li class="portfolioBtn cursor-pointer hover:underline" id="">Portfolio</li>
+
+
+            <li class=" servicesBtn cursor-pointer hover:underline" id="">Services</li>
+
+
+            <li class=" aboutBtn cursor-pointer hover:underline" id="">About</li>
+
           </ul>
         </span>
 
@@ -172,8 +177,8 @@
 
           <button
             class=" btn1 border border-[--dGray] bg-[--green] text-[--dGray] flex justify-center items-center gap-2 py-2 sm:h-full h-8  rounded-full px-3 sm:px-4 shdw sm:text-md text-md">
-            <a href="mailto:contact.rawhul@gmail.com">
-              Contact me
+            <a target="_blank" href="https://drive.google.com/file/d/1XrDAmOyh8HFKdQbZI87DIbCS5e3lTq7g/view?usp=sharing">
+              Download CV
             </a>
 
             <svg class="smiley" data-bbox="0 0 25 25" viewBox="0 0 25 25" height="16" width="16"
@@ -214,15 +219,15 @@
             class="fa-solid fa-xmark"></i></div>
 
         <div class="relative  italic text-4xl flex flex-col mt-12 gap-2">
-          <a onclick="closeCard()" href="#sec2">
-            <h2 class=" italicc cursor-pointer hover:text-[--green]">Portfolio</h2>
+          <a onclick="closeCard()" class="portfolioBtn">
+            <h2 class="portfolioBtn2 italicc cursor-pointer hover:text-[--green]">Portfolio</h2>
           </a>
-          <a onclick="closeCard()" href="#servicesSec">
-            <h2 class="italicc cursor-pointer hover:text-[--green]">Services</h2>
+          <a onclick="closeCard()">
+            <h2 class="servicesBtn2 italicc cursor-pointer hover:text-[--green]">Services</h2>
           </a>
 
-          <a onclick="closeCard()" href="#aboutSec">
-            <h2 class="italicc cursor-pointer hover:text-[--green]">About</h2>
+          <a onclick="closeCard()">
+            <h2 class="italicc aboutBtn2 cursor-pointer hover:text-[--green]">About</h2>
           </a>
         </div>
 
@@ -274,17 +279,17 @@
         </div>
 
         <!-- arrow -->
-        <a href="#sec2 ">
-          <svg preserveAspectRatio="xMidYMid meet" data-bbox="0.267 0 33.452 63.349" viewBox="0 0 33.985 63.349"
-            class="w-9 sm:mt-4 mt-0 relative dArrow cursor-pointer" xmlns="http://www.w3.org/2000/svg" data-type="ugc"
-            role="presentation" aria-hidden="true" aria-label="">
-            <g>
-              <path stroke-width="2" stroke="#d0f56e" fill="none" d="M16.993 0v63.349"></path>
-              <path stroke-width="2" stroke="#d0f56e" fill="none" d="M.267 43.172s16.726 4.625 16.726 20.13"></path>
-              <path stroke-width="2" stroke="#d0f56e" fill="none" d="M33.719 43.172s-16.726 4.625-16.726 20.13"></path>
-            </g>
-          </svg>
-        </a>
+
+        <svg preserveAspectRatio="xMidYMid meet" data-bbox="0.267 0 33.452 63.349" viewBox="0 0 33.985 63.349"
+          class="w-9 sm:mt-4 mt-0 relative dArrow cursor-pointer" xmlns="http://www.w3.org/2000/svg" data-type="ugc"
+          role="presentation" aria-hidden="true" aria-label="">
+          <g>
+            <path stroke-width="2" stroke="#d0f56e" fill="none" d="M16.993 0v63.349"></path>
+            <path stroke-width="2" stroke="#d0f56e" fill="none" d="M.267 43.172s16.726 4.625 16.726 20.13"></path>
+            <path stroke-width="2" stroke="#d0f56e" fill="none" d="M33.719 43.172s-16.726 4.625-16.726 20.13"></path>
+          </g>
+        </svg>
+
       </div>
 
 
@@ -312,28 +317,29 @@
       </div>
 
 
-      <div class=" portfolio-media  row1 sm:flex justify-between w-full ">
+      <div class=" portfolio-media  row1 sm:flex justify-between w-full max-w-[1080px] ">
 
         <!-- Card 1 -->
-        <div id="card1"
-          class="text-white relative overflow-hidden projects-card1 flex justify-center items-center h-[460px] sm:h-[600px]  w-full sm:w-[160%] text-nowrap rounded-3xl mb-8 projects sm:mx-4">
-          <img class="object-cover h-full w-full prjImg "
-            src="https://as1.ftcdn.net/v2/jpg/04/58/02/06/1000_F_458020674_l7tGC8XbZeXH1yeEZpFHQATGecpyRc3z.jpg"
-            alt="" />
+
+        <a target="_blank" href="https://www.behance.net/gallery/171455923/Creative-Product-Manipulation-Sting"
+          id="card1"
+          class="cursor-pointer text-white relative overflow-hidden projects-card1 flex justify-center items-center h-[460px] sm:h-[600px]  w-full  text-nowrap rounded-3xl mb-8 projects sm:mx-4">
+          <img class="object-cover h-full w-full prjImg " src="https://iili.io/2uHBDrP.md.png" alt="" />
 
           <div class="absolute top-0 h-full w-full bg-gradient-to-t from-black opacity-75 cursor-pointer"></div>
 
           <div class="absolute bottom-0 p-8 flex w-full justify-between items-end">
             <div class="flex flex-col items-start">
-              <div class="text-5xl mb-4 flex flex-wrap justify-start">
-                <h4 class="font-bold">Opere d'</h4>
-                <span class="italicc italic">olio</span>
+              <div class="text-5xl mb-4 flex  justify-start">
+                <h4 class="font-bold">Energy&nbsp;</h4>
+                <span class="italicc italic">drink</span>
               </div>
 
               <div class="cursor-pointer p-2 px-4 text-sm bg-[--pink] rounded-full relative">
-                Package Design
+                Manipulation
               </div>
             </div>
+
             <button class="arrInCircle">
               <svg class="w-16 -rotate-45" preserveAspectRatio="xMidYMid meet" data-bbox="22.5 22.5 155 155"
                 viewBox="22.5 22.5 155 155" xmlns="http://www.w3.org/2000/svg" fill="white" data-type="shape"
@@ -345,27 +351,28 @@
                 </g>
               </svg>
             </button>
+
           </div>
-        </div>
+        </a>
+
 
         <!-- Card 2 -->
-        <div id="card2"
+        <a target="_blank" href="https://www.behance.net/gallery/166707105/Composition-Post-for-Body-wash-product"
+          id="card2"
           class="text-white relative overflow-hidden projects-card1 flex justify-center items-center h-[520px] text-nowrap rounded-3xl w-full mb-8 projects sm:mx-4 ">
-          <img class="object-cover h-full w-full prjImg "
-            src="https://as1.ftcdn.net/v2/jpg/04/58/02/06/1000_F_458020674_l7tGC8XbZeXH1yeEZpFHQATGecpyRc3z.jpg"
-            alt="" />
+          <img class="object-cover h-full w-full prjImg " src="https://iili.io/2uHAGEJ.md.png" alt="" />
 
           <div class="absolute top-0 h-full w-full bg-gradient-to-t from-black opacity-75 cursor-pointer "></div>
 
           <div class="absolute bottom-0 p-8 flex w-full justify-between items-end">
             <div class="flex flex-col items-start">
               <div class="text-5xl mb-4 flex flex-wrap justify-start">
-                <h4 class="font-bold">Opere d'</h4>
-                <span class="italicc italic">olio</span>
+                <h4 class="font-bold">Body&nbsp; </h4>
+                <span class="italicc italic">wash </span>
               </div>
 
-              <div class="cursor-pointer p-2 px-4 text-sm bg-[--primaryBlue] rounded-full relative">
-                Package Design
+              <div class="cursor-pointer p-2 px-4 text-sm bg-[--green] text-black rounded-full relative">
+                Manipulation
               </div>
             </div>
             <button class="arrInCircle">
@@ -381,7 +388,84 @@
             </button>
           </div>
 
-        </div>
+        </a>
+
+      </div>
+
+      <div class=" portfolio-media sm:relative -top-16 row1 sm:flex justify-between items-end w-full max-w-[1080px] ">
+
+        
+
+
+        <!-- Card 2 -->
+        <a target="_blank" href="https://www.behance.net/gallery/187568439/Eicher-Brand-Work"
+          id="card2"
+          class="text-white relative overflow-hidden projects-card1 flex justify-center items-center h-[520px] text-nowrap rounded-3xl w-full mb-8 projects sm:mx-4 ">
+          <img class="object-cover h-full w-full prjImg " src="https://iili.io/2uH1eQp.md.png" alt="" />
+
+          <div class="absolute top-0 h-full w-full bg-gradient-to-t from-black opacity-75 cursor-pointer "></div>
+
+          <div class="absolute bottom-0 p-8 flex w-full justify-between items-end">
+            <div class="flex flex-col items-start">
+              <div class="text-5xl mb-4 flex flex-wrap justify-start">
+                <h4 class="font-bold">Eicher&nbsp; </h4>
+                <span class="italicc italic">creatives</span>
+              </div>
+
+              <div class="cursor-pointer p-2 px-4 text-sm bg-[--blue]  rounded-full relative">
+                Social Media
+              </div>
+            </div>
+            <button class="arrInCircle">
+              <svg class="w-16 -rotate-45" preserveAspectRatio="xMidYMid meet" data-bbox="22.5 22.5 155 155"
+                viewBox="22.5 22.5 155 155" xmlns="http://www.w3.org/2000/svg" fill="white" data-type="shape"
+                role="presentation" aria-hidden="true" aria-label="">
+                <g>
+                  <path
+                    d="M129.8 100l-25.1 25.1-3.1-3.1 19.7-19.7h-48v-4.4h48l-19.7-19.7 3.1-3.1 25.1 24.9zm47.7 0c0-42.8-34.7-77.5-77.5-77.5S22.5 57.2 22.5 100s34.7 77.5 77.5 77.5 77.5-34.7 77.5-77.5zm-4.4 0c0 40.4-32.7 73.1-73.1 73.1S26.9 140.4 26.9 100c0-40.4 32.7-73.1 73.1-73.1 40.3.1 73 32.8 73.1 73.1z">
+                  </path>
+                </g>
+              </svg>
+            </button>
+          </div>
+
+        </a>
+
+        <!-- Card 1 -->
+
+        <a target="_blank" href="https://www.behance.net/gallery/212322305/Eicher-Brand-Identity"
+          id="card1"
+          class="cursor-pointer text-white relative overflow-hidden projects-card1 flex justify-center items-center h-[460px] sm:h-[600px]  w-full  text-nowrap rounded-3xl mb-8 projects sm:mx-4">
+          <img class="object-cover h-full w-full prjImg " src="https://iili.io/2uHV6f2.md.png"   alt="" />
+
+          <div class="absolute top-0 h-full w-full bg-gradient-to-t from-black opacity-75 cursor-pointer"></div>
+
+          <div class="absolute bottom-0 p-8 flex w-full justify-between items-end">
+            <div class="flex flex-col items-start">
+              <div class="text-5xl mb-4 flex  justify-start">
+                <h4 class="font-bold">Eicher&nbsp;</h4>
+                <span class="italicc italic">rebrand</span>
+              </div>
+
+              <div class="cursor-pointer p-2 px-4 text-sm bg-[--pink] rounded-full relative">
+                Manipulation
+              </div>
+            </div>
+
+            <button class="arrInCircle">
+              <svg class="w-16 -rotate-45" preserveAspectRatio="xMidYMid meet" data-bbox="22.5 22.5 155 155"
+                viewBox="22.5 22.5 155 155" xmlns="http://www.w3.org/2000/svg" fill="white" data-type="shape"
+                role="presentation" aria-hidden="true" aria-label="">
+                <g>
+                  <path
+                    d="M129.8 100l-25.1 25.1-3.1-3.1 19.7-19.7h-48v-4.4h48l-19.7-19.7 3.1-3.1 25.1 24.9zm47.7 0c0-42.8-34.7-77.5-77.5-77.5S22.5 57.2 22.5 100s34.7 77.5 77.5 77.5 77.5-34.7 77.5-77.5zm-4.4 0c0 40.4-32.7 73.1-73.1 73.1S26.9 140.4 26.9 100c0-40.4 32.7-73.1 73.1-73.1 40.3.1 73 32.8 73.1 73.1z">
+                  </path>
+                </g>
+              </svg>
+            </button>
+
+          </div>
+        </a>
 
       </div>
 
@@ -407,7 +491,7 @@
         </li>
 
         <li class="italicc flex gap-2 flex-row-reverse">
-          Brand Idendity
+          Web Design
           <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 84.75 42.38"
             class="w-12 flex justify-center items-center fill-[--green] -rotate-[16deg]">
             <path class="cls-1" d="M0,0h84.75c0,23.4-18.97,42.38-42.38,42.38S0,23.4,0,0Z" />
@@ -415,7 +499,7 @@
         </li>
 
         <li class="italicc flex gap-2">
-          Brand Idendity
+          Motion Graphics
 
           <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 142.52 142.52"
             class="w-12 flex justify-center items-center fill-[--pink]">
@@ -425,7 +509,7 @@
         </li>
 
         <li class="italicc flex gap-4 flex-row-reverse">
-          Brand Idendity
+          Illustration
           <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 114.02 114.02"
             class="w-7 flex justify-center items-center fill-[--lPurple]">
             <rect class="cls-1" x="16.7" y="16.7" width="80.62" height="80.62"
@@ -434,7 +518,7 @@
         </li>
 
         <li class="italicc flex gap-2 justify-center items-center">
-          Brand Idendity
+          Packaging Design
           <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 133.51 132.24"
             class="w-10 flex justify-center items-center fill-[--green]">
             <path class="cls-1"
@@ -446,7 +530,7 @@
 
     <!-- About -->
     <div id="aboutSec"
-      class="sec2 w-full px-6 sm:px-12  h-full text-[--dGray] bg-[--lGray] flex items-center flex-col text-center">
+      class="w-full px-6 sm:px-12  h-full text-[--dGray] bg-[--lGray] flex items-center flex-col text-center">
 
       <div class="flex justify-center items-center flex-col mt-28 ">
         <div class=" title text-7xl  sm:flex sm:gap-4">
@@ -454,91 +538,93 @@
           <span class="italicc italic">about me</span>
         </div>
 
-        <p class="text-lg leading-6 py-6 px-8 sm:w-[28rem]">
-          Each peace showcases my creative journey and dedication to
-          transforming ideas into visually compelling <b>Rahul</b>
-          stories&nbsp;✦
+        <p class="text-lg leading-6 py-6 px-8 sm:w-[38rem]">
+          Hello there! I'm a <b>Graphic Designer</b>
+          based in <b>Delhi,</b> passionate about helping brands to stand out&nbsp;✦
         </p>
-        <p class="text-lg leading-6 px-8 sm:w-[28rem] ">
-          Each peace showcases my creative journey and dedication to
-          transforming ideas into visually compelling stories&nbsp;✦
+        <p class="text-lg leading-6 px-8 sm:w-[38rem] ">
+          Actually, I've always struggled to identify with a specific job title because I've never wanted to specialize
+          in just one thing. <b>I love design in all its forms</b> and I enjoy exploring the areas that interest me the
+          most while learning new things every day.
         </p>
       </div>
 
 
       <!-- Pic & Exp -->
-      <div class="flex-col sm:flex-row flex mx-auto sm:justify-evenly items-center sm:w-full sm:relative gap-12 my-20">
+      <div class=" flex-col sm:flex-row flex mx-auto sm:justify-evenly items-center sm:w-full sm:relative gap-12 my-20">
         <!-- Pic -->
-        <div class="pic relative min-w-48 w-3/4 sm:w-[20%]">
-          <div class="overflow-hidden rounded-3xl">
-            <img
-              src="https://images.pexels.com/photos/771742/pexels-photo-771742.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-              alt="" class="object-contain" />
+        <div class="pic object-contain relative min-w-48 w-3/4 sm:w-[20%]">
+          <div class=" overflow-hidden rounded-3xl object-contain">
+            <img src="https://iili.io/2TNYu4e.jpg" alt="2zIwLMu.md.jpg" class="w-full" />
+            <!-- <img
+              src="https://iili.io/2TNqn8F.md.jpg" alt="2zIwLMu.md.jpg"
+              alt="" class="object-contain" /> -->
           </div>
 
-          
+
         </div>
 
         <!-- Experiences-mb -->
         <div class="exp w-full sm:hidden">
-          <div class="flex flex-col items-start border-t border-black w-full py-6">
-            <div class="ml-5 date text-lg">Jul 2017 - Aug 2017</div>
-            <h5 class="ml-5 italicc italic text-3xl">Graphic Designer</h5>
-            <h6 class="ml-5 text-sm text-gray-500">Internship</h6>
-            <div class="ml-5 date text-lg">Graphic Line Studio</div>
+          <div class="flex flex-col  items-start border-t border-black w-full py-6">
+            <div class="ml-5 date text-lg">Apr 2021 - July 2022</div>
+            <h5 class="ml-5 italicc italic text-3xl">Graphic designer</h5>
+            <h6 class="ml-5 text-sm text-gray-500">Full Time</h6>
+            <div class="ml-5 date text-lg">MHV Media (OPC) Pvt. Ltd. </div>
           </div>
           <div class="flex flex-col items-start border-t border-black w-full py-6">
-            <div class="ml-5 date text-lg">Jul 2017 - Aug 2017</div>
+            <div class="ml-5 date text-lg">Aug 2022 - Mar 2023</div>
             <h5 class="ml-5 italicc italic text-3xl">Graphic Designer</h5>
-            <h6 class="ml-5 text-sm text-gray-500">Internship</h6>
-            <div class="ml-5 date text-lg">Graphic Line Studio</div>
+            <h6 class="ml-5 text-sm text-gray-500">Full Time</h6>
+            <div class="ml-5 date text-lg">Digital Prisma</div>
           </div>
           <div class="bg-[--green] flex flex-col items-start border-y border-black w-full py-6">
-            <div class="ml-5 date text-lg">Jul 2017 - Aug 2017</div>
-            <h5 class="ml-5 italicc italic text-3xl">Graphic Designer</h5>
-            <h6 class="ml-5 text-sm text-gray-500">Internship</h6>
-            <div class="ml-5 date text-lg">Graphic Line Studio</div>
+            <div class="ml-5 date text-lg">Apr 2023 - Currently</div>
+            <h5 class="ml-5 italicc italic text-3xl">Content Designer</h5>
+            <h6 class="ml-5 text-sm text-gray-500">Full Time</h6>
+            <div class="ml-5  date text-lg">VECV (Volvo Eicher Commercial Vehicles)</div>
           </div>
         </div>
 
         <!-- Experiences-lg -->
-        <div class="exp w-[70%] hidden sm:block ">
+        <div class="exp  w-[70%] hidden sm:block ">
           <div class="w-full px-2 text-left flex relative pb-6  text-gray-400 font-semibold">
-            <h6 class="w-1/3">Internship</h6>
-            <h6 class="w-[42%] ">Internship</h6>
-            <h6 class="w-1/4 ">Internship</h6>
+            <h6 class="w-1/3">Time</h6>
+            <h6 class="w-[42%] ">Role</h6>
+            <h6 class="w-1/4 ">Company</h6>
           </div>
 
           <!-- Data/Row1 -->
           <div class="w-full  text-left flex relative  py-6 border-t border-black px-4">
-            <div class="w-1/3 pr-8  text-lg font-semibold">Jul 2017 - Aug 2017</div>
+            <div class="w-1/3 pr-8  text-lg font-semibold">Apr 2021 - July 2022</div>
             <div class="w-[42%] pr-8 flex flex-col items-start gap-2">
               <h5 class="italicc italic text-3xl font-thin">Graphic Designer</h5>
-              <h6 class="text-sm text-gray-400">Internship</h6>
+              <h6 class="text-sm text-gray-400">Full Time</h6>
             </div>
-            <div class="w-1/4 pr-8 text-lg font-semibold">Graphic Line Studio</div>
+            <div class="w-1/4 pr-8 text-lg font-semibold">MHV Media (OPC) Pvt. Ltd.</div>
 
           </div>
 
           <!-- Data/Row2 -->
           <div class="w-full px-4 text-left flex relative  py-6 border-t border-black">
-            <div class="w-1/3 pr-8   text-lg font-semibold">Jul 2017 - Aug 2017</div>
+            <div class="w-1/3 pr-8   text-lg font-semibold">Aug 2022 - Mar 2023</div>
             <div class="w-[42%] pr-8 flex flex-col items-start gap-2">
-              <h5 class="w-[80%] italicc italic text-3xl font-thin">Graphic Designer & Illustrator</h5>
-              <h6 class="text-sm text-gray-400">Internship</h6>
+              <h5 class="w-[80%] italicc italic text-3xl font-thin">Graphic Designer</h5>
+              <h6 class="text-sm text-gray-400">Full Time</h6>
             </div>
-            <div class="w-1/4 pr-8  text-lg font-semibold">Graphic Line Studio</div>
+            <div class="w-1/4 pr-8  text-lg font-semibold">Klick Electricals</div>
 
           </div>
 
           <!-- Data/Row3 -->
           <div class="w-full px-4 bg-[--green] text-left flex relative  py-6 border-y border-black">
-            <div class="w-1/3 pr-8   text-lg font-semibold">Jul 2017 - Aug 2017</div>
+            <div class="w-1/3 pr-8   text-lg font-semibold">Apr 2023 - Currently</div>
             <div class="w-[42%] pr-8 flex flex-col items-start gap-2">
-              <h5 class="italicc italic text-3xl font-thin">Graphic Designer </h5>
-
+              <h5 class="italicc italic text-3xl font-thin">Content Designer</h5>
+              <h6 class="text-sm text-gray-400">Full Time</h6>
             </div>
-            <div class="w-1/4 pr-8  text-lg font-semibold">Graphic Line Studio</div>
+            <div class="w-1/4 pr-8  text-lg font-semibold">VECV (Volvo Eicher Commercial Vehicles)
+            </div>
 
           </div>
 
@@ -578,7 +664,9 @@
           The power of <span class="italic italicc">design.</span>
         </p>
         <p class="text-2xl">
-          The power of <span class="italic italicc">design.</span>
+          The magic of
+
+          <span class="italic italicc">ideas.</span>
         </p>
       </div>
 
@@ -645,6 +733,7 @@
     integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollToPlugin.min.js"></script>
   <script src="main.js"></script>
 </body>
 
